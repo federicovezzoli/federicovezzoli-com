@@ -1,0 +1,17 @@
+// ------------------------------------------------------------
+// Define your main colour palette using whatever naming system you like
+// ------------------------------------------------------------
+
+$white: #ffffff;
+$black: #1f1f1f;
+$grey: #666;
+
+$easeIn: cubic-bezier(0.895, 0.03, 0.685, 0.22); /* easeInQuart */
+$easeOut: cubic-bezier(0.165, 0.84, 0.44, 1); /* easeOutQuart */
+$easeInOut: cubic-bezier(0.77, 0, 0.175, 1); /* easeInOutQuart */
+
+@mixin base_transition($property: all, $duration: 0.4s) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $easeInOut;
+}

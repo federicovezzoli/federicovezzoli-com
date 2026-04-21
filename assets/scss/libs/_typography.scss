@@ -1,0 +1,29 @@
+// ------------------------------------------------------------
+// Global typography
+// ------------------------------------------------------------
+
+// ------------------------------------------------------------
+// Fonts
+// ------------------------------------------------------------
+
+.font-body {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+// ------------------------------------------------------------
+// Core typography
+// ------------------------------------------------------------
+
+//p, span, cite, ol, ul, pre, label, input, textarea 	{ font-size: 1em; }
+li 													{ line-height: inherit; }
+strong, b 											{ font-weight: 700; }
+em, i, q 											{ font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    font-display: swap;
+}

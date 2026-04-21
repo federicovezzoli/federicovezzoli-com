@@ -1,0 +1,20 @@
+# The following redirect is intended for use with most SPA's that handles routing internally.
+
+#[[redirects]]
+#from = "https://www.evlaser.it/*"
+#to = "https://www.evlaser.com/"
+#status = 302
+#force = true
+#conditions = {Language = ["en"]}
+
+[[redirects]]
+from = "/photo/*"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/photo"
+to = "/"
+status = 301
+force = true
