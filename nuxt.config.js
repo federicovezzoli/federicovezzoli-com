@@ -141,8 +141,5 @@ module.exports = {
 	 */
 	build: {
 		//analyze: false,
-		transpile: [
-			"three"
-		  ]
 	}
 };

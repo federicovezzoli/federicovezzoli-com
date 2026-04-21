@@ -31,7 +31,6 @@
 		"nuxt-device-detect": "^1.1.4",
 		"nuxt-user-agent": "^1.2.2",
 		"nuxt-webfontloader": "^1.1.0",
-		"three": "^0.132.2"
 	},
 	"devDependencies": {
 		"@nuxtjs/eslint-config": "^5.0.0",
