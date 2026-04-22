@@ -29,13 +29,13 @@ export let home = {
 				.add(animations.methods.paragIn(parag[0], false), delay + 1.25);
 
 			for (let i = 0; i <= 3; i++) {
-				tl.add(animations.methods.paragIn(mailto[i], false), delay + 1.75 + i * 0.05);
+				tl.add(animations.methods.paragIn(mailto[i], false), delay + 1.7 + i * 0.05);
 			}
 			
-			tl.add(animations.methods.paragIn(parag[1], false), delay + 2.75);
+			tl.add(animations.methods.paragIn(parag[1], false), delay + 2.25);
 
 			for (let i = 4; i < mailto.length; i++) {
-				tl.add(animations.methods.paragIn(mailto[i], false), delay + 2 + i * 0.05);
+				tl.add(animations.methods.paragIn(mailto[i], false), delay + 2.25 + i * 0.05);
 			}
 		},
 		beforeLeave(el) {
