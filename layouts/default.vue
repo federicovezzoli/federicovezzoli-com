@@ -87,7 +87,6 @@ export default {
 	pointer-events: none;
 	z-index: 15000;
 	opacity: 0;
-	//background: red;
 
 	@include media-breakpoint-up(lg) {
 		display: block;
@@ -101,10 +100,10 @@ export default {
 	.mouse-follower--dot {
 		opacity: 1;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform-origin: center center;
-		transform: translate(-50%, -50%) rotate(-185deg);
+		top: 75%;
+		left: 75%;
+		transform-origin: top center;
+		transform: translate(-15%, 85%) rotate(-185deg);
 		font-size: 2rem;
 	}
 }

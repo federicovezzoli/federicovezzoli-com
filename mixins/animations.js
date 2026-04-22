@@ -90,34 +90,38 @@ export let animations = {
 				}
 				i++;
 			});
+			
+			if (odd.length > 0) {
+				tl.staggerFromTo(
+					odd,
+					0.3,
+					{ yPercent: 40, opacity: 0 },
+					{
+						yPercent: 0,
+						opacity: 1,
+						ease: 'back.out',
+						stagger: { each: 0.03, from: "center" }
+					},
+					null,
+					0
+				);
+			}
 
-			tl.staggerFromTo(
-				odd,
-				0.3,
-				{ yPercent: 40, opacity: 0 },
-				{
-					yPercent: 0,
-					opacity: 1,
-					ease: 'back.out',
-					stagger: { each: 0.03, from: "center" }
-				},
-				null,
-				0
-			);
-
-			tl.staggerFromTo(
-				even,
-				0.3,
-				{ yPercent: 40, opacity: 0 },
-				{
-					yPercent: 0,
-					opacity: 1,
-					ease: 'back.out',
-					stagger: { each: 0.03, from: "center" }
-				},
-				null,
-				0.1
-			);
+			if (even.length > 0) {
+				tl.staggerFromTo(
+					even,
+					0.3,
+					{ yPercent: 40, opacity: 0 },
+					{
+						yPercent: 0,
+						opacity: 1,
+						ease: 'back.out',
+						stagger: { each: 0.03, from: "center" }
+					},
+					null,
+					0.1
+				);
+			}
 
 			return tl;
 		},

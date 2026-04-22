@@ -8,7 +8,6 @@ export let home = {
 		css: false,
 		enter(el, done) {
 			let delay = 0.5;
-			//console.log("enter home", this.$store.state.isLoaded, el )
 
 			const tl = new gsap.timeline({
 				onComplete: () => {
@@ -17,9 +16,8 @@ export let home = {
 			});
 
 			let title = el.querySelector(".home-title");
-			let parag = el.querySelector(".home-parag");
-			let mailto = el.querySelector(".mailto");
-			//let rulers = el.querySelectorAll(".ruler")
+			let parag = el.querySelectorAll(".home-parag");
+			let mailto = el.querySelectorAll(".mailto");
 
 			tl.fromTo(
 				el,
@@ -28,28 +26,21 @@ export let home = {
 				delay
 			)
 				.add(animations.methods.titleIn(title, false), delay + 0.5)
-				.add(animations.methods.paragIn(parag, false), delay + 1.25)
-				.add(animations.methods.paragIn(mailto, false), delay + 1.75);
+				.add(animations.methods.paragIn(parag[0], false), delay + 1.25);
+
+			for (let i = 0; i <= 3; i++) {
+				tl.add(animations.methods.paragIn(mailto[i], false), delay + 1.75 + i * 0.05);
+			}
+			
+			tl.add(animations.methods.paragIn(parag[1], false), delay + 2.75);
+
+			for (let i = 4; i < mailto.length; i++) {
+				tl.add(animations.methods.paragIn(mailto[i], false), delay + 2 + i * 0.05);
+			}
 		},
 		beforeLeave(el) {
-			//console.log("before leave", this.$route)
 		},
 		leave(el, done) {
-			//console.log("leave home", el, this.$route.name, this.$store.state.menuOpen, this.$store.state.isMenuDone, this.$store.state.bigLink)
-
-			let tl = new gsap.timeline({
-				onComplete: function() {
-					done();
-				}
-			});
-
-			//tl.add(animations.methods.pageOut(el, this.$device), 0)
-			tl.to(
-				".home-title",
-			
-				{ opacity: 0, yPercent: -30, duration: 0.7, ease: 'power4.out' },
-				0
-			).to(".canvas-wrap", { opacity: 0, duration: 0.7, ease: 'power4.out' }, 0.1);
 		}
 	}
 };
