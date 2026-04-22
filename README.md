@@ -1,6 +1,6 @@
 # federicovezzoli.com
 
-Personal website for [Federico Vezzoli](https://federicovezzoli.com), built with Nuxt.js and Sanity CMS, deployed as a static site on Netlify.
+Personal website for [Federico Vezzoli](https://federicovezzoli.com), built with Nuxt.js, deployed as a static site on Netlify.
 
 ## Tech Stack
 

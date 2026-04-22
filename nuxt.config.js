@@ -99,7 +99,6 @@ module.exports = {
 	],
 
 	buildModules: [
-		"@nuxtjs/sanity",
 		"@nuxtjs/style-resources",
 		/* [
 			"@nuxtjs/google-analytics",
@@ -122,7 +121,7 @@ module.exports = {
 			"@/assets/scss/libs/_typography.scss"
 		]
 	},
-	
+
 	router: {
 		trailingSlash: true,
 	},
