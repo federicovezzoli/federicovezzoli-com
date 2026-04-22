@@ -48,6 +48,11 @@ module.exports = {
 			}
 		],
 		script: [
+			{
+				"data-goatcounter": "https://federicovezzoli.goatcounter.com/count",
+				async: true,
+				src: "//gc.zgo.at/count.js"
+			}
 		],
 		link: [
 			{
