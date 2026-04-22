@@ -122,16 +122,7 @@ module.exports = {
 			"@/assets/scss/libs/_typography.scss"
 		]
 	},
-
-	sanity: {
-		projectId: "ui8m29vr",
-		dataset: "production",
-		useCdn: false,
-		minimal: false,
-		imageHelper: false,
-		contentHelper: true,
-	},
-
+	
 	router: {
 		trailingSlash: true,
 	},
