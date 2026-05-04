@@ -13,7 +13,7 @@
 				
 					<ul class="home-list">
 						<li><a href="mailto:me@federicovezzoli.com" class="mailto">Get in touch</a></li>
-						<li><a href="https://instagram.com/federicovezzol" class="mailto" target="_blank">Instagram</a></li>
+						<li><a href="https://instagram.com/federicovezzoli" class="mailto" target="_blank">Instagram</a></li>
 						<li><a href="https://github.com/federicovezzoli" class="mailto" target="_blank">GitHub</a></li>
 						<li><a href="https://www.linkedin.com/in/federico-vezzoli-33151531/" class="mailto" target="_blank">LinkedIn</a></li>
 					</ul>
